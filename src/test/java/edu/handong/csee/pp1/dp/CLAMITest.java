@@ -55,16 +55,28 @@ public class CLAMITest {
 	}
 	
 	@Test
-	public void testCLAMIWithYourSelectedProject() {
+	public void testCLAMIWithYourSelectedProject1() {
 		
 		// TASK3: Conduct defect prediction by using CLAMI models
 		// complete this test case for the generated arff files from Task 2
 		
-		//String[] args = {"-f","data/[your_generated_metric_data].arff","-l","label","-p", "buggy", "-m"};
-		
-		//CLAMI.main(args);
+		String[] args = {"-f","data/java.arff","-l","label","-p", "buggy", "-m"};
+
+		CLAMI.main(args);
 	}
 	
+	@Test
+	public void testCLAMIWithYourSelectedProject2() {
+		
+		// TASK3: Conduct defect prediction by using CLAMI models
+		// complete this test case for the generated arff files from Task 2
+		
+		String[] args = {"-f","data/java-1.arff","-l","label","-p", "buggy", "-m"};
+
+		CLAMI.main(args);
+	}
+	
+
 	@Test
 	public void testCLAMIWithApacheProjectToFindBestCutoffForPrecision() {
 		
